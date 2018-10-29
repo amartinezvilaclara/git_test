@@ -1,5 +1,7 @@
 
 Fitxer de proves per gitHub.com
 
-
 Aquesta linea s'afegeix a la branca principal
+
+Aquesta linea s'afegeix a la branca de proves.
+
