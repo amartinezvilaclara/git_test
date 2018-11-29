@@ -22,7 +22,7 @@ SELECT CONCAT_WS(', ', Origin, colYear, colMonth, avg(arrDelay))
 --del codi de l’aeroport es mostri el nom de la ciutat
 SELECT CONCAT_WS(', ', ua.Airport, colYear, colMonth, avg(arrDelay))
 	FROM flights AS f 
-		JOIN usairports AS ua
+		LEFT JOIN usairports AS ua
 		ON f.Origin= ua.IATA
 	GROUP BY Origin, colYear, colMonth
     ORDER BY Origin, colYear, colMonth
@@ -50,8 +50,9 @@ SELECT Count(*) AS "Number of Cancelled Flights", f.UniqueCarrier, c.Description
 --6. L’identificador dels 10 avions que més distancia han recorregut fent vols.
 SELECT SUM(Distance) AS "Total flown Miles", TailNum
 	FROM flights
+	WHERE TailNum != 'NA'
 	GROUP BY TailNum
-	ORDER BY SUM(Distance) DESC LIMIT 10 OFFSET 1
+	ORDER BY SUM(Distance) DESC LIMIT 10
 ;
 -- NOTA: S'ha eliminat el primer resultat pk es la suma de distances dels vols NA (no se sap el TailNum)
 
@@ -63,4 +64,12 @@ SELECT a.UniqueCarrier, c.Description, AVG(ArrDelay)
 		ON a.UniqueCarrier = c.CarrierCode
 	WHERE 10 < (SELECT AVG (ArrDelay) FROM flights AS b WHERE a.UniqueCarrier = b.UniqueCarrier)
 	GROUP BY UniqueCarrier
+;
+----------------->>Alternativa
+SELECT a.UniqueCarrier, c.Description, AVG(ArrDelay)
+	FROM flights AS a
+		JOIN carriers AS c 
+		ON a.UniqueCarrier = c.CarrierCode
+	GROUP BY UniqueCarrier
+		HAVING AVG(ArrDelay) >10
 ;
