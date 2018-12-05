@@ -7,3 +7,6 @@ https://github.com/amartinezvilaclara/git_test/blob/master/itacademy_bbdd_AnaMar
 
 - Exercici USFlights:
 https://github.com/amartinezvilaclara/git_test/blob/master/USFlightsExercise_AnaMartinezVilaclara.sql
+
+- Exercici Diagrama de classes 01:
+https://github.com/amartinezvilaclara/git_test/blob/master/exerciciDiagramaDeClasses_01_AnaMartinezVilaclara.pdf
