@@ -10,3 +10,8 @@ https://github.com/amartinezvilaclara/git_test/blob/master/USFlightsExercise_Ana
 
 - Exercici Diagrama de classes 01:
 https://github.com/amartinezvilaclara/git_test/blob/master/exerciciDiagramaDeClasses_01_AnaMartinezVilaclara.pdf
+
+- Exercici Diagrama de classes 02:
+https://github.com/amartinezvilaclara/git_test/blob/master/diagramaDeClasses2_AlejandroCalle_AnaMartinez.pdf
+
+
