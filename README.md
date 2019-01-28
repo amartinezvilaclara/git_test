@@ -17,5 +17,8 @@ https://github.com/amartinezvilaclara/git_test/blob/master/diagramaDeClasses2_Al
 - Exercici de les lletres Repetides:
 https://github.com/amartinezvilaclara/lletresRepetides
 
+- Exercici dels vehicles:
+https://github.com/amartinezvilaclara/Vehicles
+
 
 
